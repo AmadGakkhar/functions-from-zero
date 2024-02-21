@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from utils.funcs import wiki_summary
 
 import click
