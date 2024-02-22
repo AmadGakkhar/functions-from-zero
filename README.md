@@ -13,3 +13,24 @@ curl -X 'POST' \
   "page_name": "Microsoft"
 }'
 '''
+### Build Docker Container
+run
+docker build -t my-fastapi-app .
+docker image ls (Will list the images)
+docker ps -a (Lists all docker containers)
+docker run -d -p 8000:8000 my-fastapi-app (Runs image in the container)
+docker logs [container id] (check container logs)
+
+
+To delete all containers including its volumes use,
+
+docker rm -vf $(docker ps -aq)
+
+To delete all the images,
+
+docker rmi -f $(docker images -aq)
+
+## Invoke POST Request
+
+Run
+bash invoke.sh
