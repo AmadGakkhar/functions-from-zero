@@ -3,3 +3,6 @@ pytest
 pylint
 wikipedia
 click
+fastapi
+uvicorn[standard]
+pydantic
